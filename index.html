@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Preparation Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center gap-2"
+           href="#home">
+
+            <img src="/logo.jpg"
+                 alt="Placement Prep Logo"
+                 class="site-logo"
+                 onerror="this.style.display='none'">
+
+            <span>PLACEMENT PREP</span>
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#aptitude">Aptitude</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#interview">Interview</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#coding">Coding</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#progress">Progress</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- TOP ANNOUNCEMENT -->
+<div class="announcement">
+    Practice Real Company Assessment Patterns
+    • Latest Mock Tests
+</div>
+
+<!-- HOME SECTION -->
+<section id="home" class="hero">
+
+    <div class="container">
+
+        <span class="hero-label">
+            YOUR PLACEMENT JOURNEY STARTS HERE
+        </span>
+
+        <h1>
+            MASTER THE SKILLS<br>
+            <span class="green-text">
+                THAT BUILD YOUR FUTURE.
+            </span>
+        </h1>
+
+        <p>
+            Prepare for placements with aptitude practice,
+            programming challenges, company interview questions
+            and mock tests — all in one place.
+        </p>
+
+        <!-- SEARCH FORM -->
+        <form class="search-box" id="searchForm">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search Google, Microsoft, TCS, coding..."
+                aria-label="Search preparation topics"
+                required>
+
+            <button type="submit">Explore</button>
+
+        </form>
+
+        <!-- GENERAL SEARCH RESULTS -->
+        <div id="searchResults"
+             class="mt-3"
+             aria-live="polite">
+        </div>
+
+        <!-- COMPANY SEARCH RESULTS -->
+        <div id="companySearchResults"
+             class="mt-4"
+             aria-live="polite">
+        </div>
+
+        <!-- TRENDING TOPICS -->
+        <div class="trending">
+
+            <span class="trending-label">↗ Trending</span>
+
+            <a href="#aptitude" class="tag">
+                Logical Reasoning
+            </a>
+
+            <a href="#interview" class="tag">
+                Interview Questions
+            </a>
+
+            <a href="#coding" class="tag">
+                Coding Practice
+            </a>
+
+            <a href="#aptitude" class="tag">
+                Aptitude MCQs
+            </a>
+
+            <a href="#coding" class="tag">
+                DSA
+            </a>
+
+            <a href="#progress" class="tag">
+                Track Progress
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<main class="container my-5">
+
+    <!-- INTRODUCTION -->
+    <section class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Prepare for Your Dream Job
+        </h2>
+
+        <p class="text-secondary">
+            Everything you need for placement preparation in one place.
+        </p>
+
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="row g-4 mb-5">
+
+        <div class="col-md-4">
+
+            <div class="card feature-card h-100 shadow-sm p-3">
+
+                <div class="card-body text-center">
+
+                    <h3>🧠 Aptitude</h3>
+
+                    <p>
+                        Practise multiple-choice questions and check your answers.
+                    </p>
+
+                    <a href="#aptitude" class="btn btn-primary">
+                        Practise Now
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card feature-card h-100 shadow-sm p-3">
+
+                <div class="card-body text-center">
+
+                    <h3>💼 Interview</h3>
+
+                    <p>
+                        Prepare for HR and technical interview questions.
+                    </p>
+
+                    <a href="#interview" class="btn btn-primary">
+                        Explore Questions
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card feature-card h-100 shadow-sm p-3">
+
+                <div class="card-body text-center">
+
+                    <h3>💻 Coding</h3>
+
+                    <p>
+                        Explore basic programming problems for practice.
+                    </p>
+
+                    <a href="#coding" class="btn btn-primary">
+                        View Problems
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- APTITUDE SECTION -->
+    <section id="aptitude"
+             class="content-section p-4 rounded-4 mb-5">
+
+        <h2 class="fw-bold mb-3">
+            Aptitude Practice
+        </h2>
+
+        <p class="text-secondary">
+            Choose an answer and submit it to check your result.
+        </p>
+
+        <!-- SESSION COUNTERS -->
+        <div class="row g-3 mb-4">
+
+            <div class="col-md-4">
+                <div class="p-3 rounded-3 border border-secondary">
+
+                    <p class="mb-1">
+                        Attempted This Session
+                    </p>
+
+                    <h4 id="sessionAttempted"
+                        class="fw-bold mb-0">0</h4>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-3 rounded-3 border border-success">
+
+                    <p class="text-success mb-1">
+                        Correct This Session
+                    </p>
+
+                    <h4 id="sessionCorrect"
+                        class="fw-bold text-success mb-0">0</h4>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-3 rounded-3 border border-danger">
+
+                    <p class="text-danger mb-1">
+                        Wrong This Session
+                    </p>
+
+                    <h4 id="sessionWrong"
+                        class="fw-bold text-danger mb-0">0</h4>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- QUIZ QUESTIONS -->
+        <div id="quizArea"
+             class="bg-black p-4 rounded-3 shadow-sm">
+            Loading questions...
+        </div>
+
+        <p id="quizMessage"
+           class="mt-3 fw-bold"
+           aria-live="polite"></p>
+
+    </section>
+
+    <!-- INTERVIEW SECTION -->
+    <section id="interview"
+             class="content-section p-4 rounded-4 mb-5">
+
+        <h2 class="fw-bold mb-3">
+            Interview Questions
+        </h2>
+
+        <div id="interviewList" class="row g-3">
+            Loading interview questions...
+        </div>
+
+    </section>
+
+    <!-- CODING SECTION -->
+    <section id="coding"
+             class="content-section p-4 rounded-4 mb-5">
+
+        <h2 class="fw-bold mb-3">
+            Coding Practice
+        </h2>
+
+        <div id="codingList" class="row g-3">
+            Loading coding problems...
+        </div>
+
+    </section>
+
+    <!-- PROGRESS SECTION -->
+    <section id="progress"
+             class="content-section p-4 rounded-4 mb-5">
+
+        <h2 class="fw-bold mb-3">
+            My Progress
+        </h2>
+
+        <p>
+            Questions attempted:
+            <strong id="attempted">0</strong>
+        </p>
+
+        <p>
+            Correct answers:
+            <strong id="correct">0</strong>
+        </p>
+
+        <p>
+            Wrong answers:
+            <strong id="wrong">0</strong>
+        </p>
+
+        <!-- ACCURACY BAR -->
+        <div class="progress"
+             role="progressbar"
+             aria-label="Quiz accuracy"
+             aria-valuemin="0"
+             aria-valuemax="100"
+             aria-valuenow="0"
+             id="progressBar">
+
+            <div id="progressFill"
+                 class="progress-bar bg-success"
+                 style="width: 0%">
+                0%
+            </div>
+
+        </div>
+
+        <!-- REFRESH BUTTON -->
+        <button id="refreshProgress"
+                type="button"
+                class="btn btn-outline-primary mt-3">
+
+            Refresh Progress &amp; Restart Quiz
+
+        </button>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+
+    <p class="mb-0">
+        Creation by Samruddhi Gawale.
+    </p>
+
+</footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- EXISTING PROJECT JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
